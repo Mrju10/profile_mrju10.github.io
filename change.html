@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portafolio de Códigos Python</title>
+    <style>
+        .code-preview {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .code-preview img {
+            width: 18px;
+            height: 38px;
+        }
+        
+        .code-preview pre {
+            flex-basis: 90%;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        
+        .code-preview pre code {
+            display: none;
+        }
+        
+        @media (min-width: 768px) {
+            .code-preview img {
+                width: 1%;
+                flex-basis: 40%;
+            }
+            .code-preview pre {
+                flex-basis: 60%;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .code-preview img {
+                width: 1%;
+                flex-basis: 30%;
+            }
+            .code-preview pre {
+                flex-basis: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Portafolio de Códigos Python</h1>
+
+    <div class="code-preview">
+        <img src="imges\marios.jpg" alt="Vista previa" onclick="toggleCode(this)">
+
+        <pre>
+      <code>
+        #ASCII_python
+        #Conversión de imagen a código ASCII
+                                                                                                            
+
+      </code>
+    </pre>
+    </div>
+
+    <div class="code-preview">
+        <img src="ruta_de_la_imagen2.png" alt="Vista previa" onclick="toggleCode(this)">
+        <pre>
+      <code>
+        # Aquí va tu código Python 2
+      </code>
+    </pre>
+    </div>
+
+    <div class="code-preview">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.etlweb.com%2FMedia%2FThumbs%2F0000%2F0000112-xc236x-flash-programmer.png&f=1&nofb=1&ipt=64e8129c4282818764e563bef66e13701faeccaf184039d877737ce4e99db7e0&ipo=images" alt="Vista previa"
+            onclick="toggleCode(this)">
+        <pre>
+      <code>
+        # Aquí va tu código Python 3
+      </code>
+    </pre>
+    </div>
+
+    <!-- Repite los bloques .code-preview para cada imagen y código adicional -->
+
+    <script>
+        function toggleCode(element) {
+            var codeElement = element.nextElementSibling.querySelector("code");
+            if (codeElement.style.display === "none") {
+                codeElement.style.display = "block";
+            } else {
+                codeElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
